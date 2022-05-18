@@ -1,0 +1,40 @@
+:root {
+    --background-color: #E8F9FD;
+    --first-color: #2155CD;
+    --second-color: #0AA1DD;
+    --third-color: #79DAE8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+div {
+    padding-top: 50vh;
+    align-self: center;
+}
+
+div > * {
+    padding: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    border: var(--second-color) solid 1px;
+    border-radius: 5px;
+}
+
+select {
+    border: var(--first-color) solid 1px;
+    border-radius: 5px;
+}
+
+#first-currency {
+    margin-right: 50px;
+}
