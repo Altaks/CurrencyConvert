@@ -42,7 +42,7 @@ firstInput.addEventListener('input', function(event) {
             "&format=json")
             .then(response => response.json())
             .then(results => {
-                secondInput.value = results.rates[0]["rate_for_amount"];
+                secondInput.value = results.rates[secondCurrency].rate_for_amount;
             })
             .then(data => console.log(data));
     }
@@ -66,7 +66,7 @@ secondInput.addEventListener('input', function(event) {
             "&format=json")
             .then(response => response.json())
             .then(results => {
-                firstInput.value = results.rates[0]["rate_for_amount"];
+                firstInput.value = results.rates[secondCurrency].rate_for_amount;
             })
             .then(data => console.log(data));
     }
